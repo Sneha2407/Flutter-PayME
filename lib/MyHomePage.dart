@@ -3,6 +3,7 @@
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui1/PaymentPage.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required String title});
@@ -205,7 +206,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              // Navigator.push(
+                              //     context,
+                              //     MaterialPageRoute(
+                              //         builder: (context) => ChangePassword()));
+                            },
                             child: Text(
                               "CHANGE PASSWORD",
                               style: TextStyle(
@@ -249,7 +255,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                 ]),
                           ),
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => PaymentPage()));
+                            },
                             child: Text(
                               "SAVE",
                               style: TextStyle(
